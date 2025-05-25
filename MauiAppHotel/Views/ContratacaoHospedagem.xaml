@@ -11,11 +11,13 @@
                          Spacing="10">
 
         <Label Text="Cálculo da Diária"
-               FontFamily="Kalam"
+               FontFamily="OpenSans-Semibold"
                FontSize="50"
+               HorizontalOptions="CenterAndExpand"
                TextColor="{StaticResource MidnightBlue}" />
 
-        <Frame Padding="10">
+        <Frame Padding="10"
+               BackgroundColor="{StaticResource Gray100}">
             <VerticalStackLayout>
                 <Grid RowDefinitions="Auto, Auto"
                       ColumnDefinitions="*, *, 2*">
@@ -32,7 +34,8 @@
                              x:Name="stp_adultos"
                              Minimum="0"
                              Maximum="10"
-                             Increment="1" />
+                             Increment="1"
+                             BackgroundColor="{StaticResource White}"/>
 
                     <Label Grid.Row="1" Grid.Column="0"
                            Text="Crianças:" />
@@ -46,10 +49,11 @@
                              x:Name="stp_criancas"
                              Minimum="0"
                              Maximum="10"
-                             Increment="1" />
+                             Increment="1"
+                             BackgroundColor="{StaticResource White}"/>
                 </Grid>
 
-                <Frame Padding="10" Margin="10">
+                <Frame Padding="10" Margin="10" BackgroundColor="{StaticResource Gray100}">
                     <VerticalStackLayout>
 
                         <Label Text="Escolha sua Suíte"
@@ -59,12 +63,14 @@
 
                         <Picker x:Name="pck_quarto"
                                 Title="Selecione sua Acomodação"
-                                ItemDisplayBinding="{Binding Descricao}"/>
+                                ItemDisplayBinding="{Binding Descricao}"
+                                BackgroundColor="{StaticResource White}"/>
                     </VerticalStackLayout>
                 </Frame>
 
                 <Frame Padding="10"
-                       Margin="10">
+                       Margin="10"
+                       BackgroundColor="{StaticResource Gray100}">
                     <VerticalStackLayout Spacing="10">
 
                         <Label Text="Período da Estadia"
@@ -76,29 +82,29 @@
                             <Label Text="Check-in:" />
                             <DatePicker x:Name="dtpck_checkin"
                                         DateSelected="dtpck_checkin_DateSelected"
-                                        Format="dd/MM/yyyy" />
+                                        Format="dd/MM/yyyy"
+                                        BackgroundColor="{StaticResource White}"/>
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Label Text="Check-out:" />
                             <DatePicker x:Name="dtpck_checkout"
-                                        Format="dd/MM/yyyy" />
+                                        Format="dd/MM/yyyy"
+                                        BackgroundColor="{StaticResource White}"/>
                         </HorizontalStackLayout>
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar" Clicked="Button_Clicked" />
+                <Button Text="Avançar" Clicked="Button_Clicked"
+                        HorizontalOptions="CenterAndExpand"
+                        BackgroundColor="{StaticResource MidnightBlue}"/>
+
+                <Button Text="Sobre" Clicked="Button_Clicked_1"
+                        BackgroundColor="{StaticResource Gray300}"
+                        HorizontalOptions="End"/>
 
             </VerticalStackLayout>
         </Frame>
-
-        <Button Text="Sobre"
-        Clicked="OnSobreClicked"
-        HorizontalOptions="Center"
-        BackgroundColor="Gray"
-        VerticalOptions="End"
-        />
-
 
     </VerticalStackLayout>
 

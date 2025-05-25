@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.FinalizadaHospedagem">
+    <VerticalStackLayout>
+        <Label 
+            Text="Reserva Realizado com Sucesso!"
+            FontFamily="OpenSans-Semibold"
+            FontSize="50"
+            HorizontalOptions="CenterAndExpand"
+            TextColor="{StaticResource MidnightBlue}" />
+
+        <Frame Margin="10" HorizontalOptions="CenterAndExpand">
+            <VerticalStackLayout>
+                <Label Text="Quarto escolhido: Suíte Super Luxo"
+                       FontSize="20"/>
+                <Label Text="Adultos: 2" 
+                       FontSize="20"/>
+                <Label Text="Crianças: 1" 
+                       FontSize="20"/>
+                <Label Text="Dias reservados: 3" 
+                       FontSize="20"/>
+                <Label Text="Valor da estádia: R$750,00"
+                       FontSize="20"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar" Clicked="Button_Clicked"
+                BackgroundColor="{StaticResource MidnightBlue}"
+                HorizontalOptions="CenterAndExpand"/>
+
+    </VerticalStackLayout>
+    
+</ContentPage>

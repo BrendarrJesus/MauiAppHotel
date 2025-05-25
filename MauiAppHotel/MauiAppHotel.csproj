@@ -57,13 +57,34 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="Resources\Fonts\NovaPasta\**" />
+	  <Compile Remove="Resources\Fonts\NovaPasta\**" />
+	  <EmbeddedResource Remove="Resources\Fonts\NovaPasta\**" />
+	  <MauiCss Remove="Resources\Fonts\NovaPasta\**" />
+	  <MauiFont Remove="Resources\Fonts\NovaPasta\**" />
+	  <MauiXaml Remove="Resources\Fonts\NovaPasta\**" />
+	  <None Remove="Resources\Fonts\NovaPasta\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Views\FinalizadaHospedagem.cs" />
 	  <Compile Remove="Views\Sobre.xaml.cs" />
 	  <Compile Remove="Views\SobreDesenvolvedor.xaml.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiFont Remove="Resources\Fonts\OFL.txt" />
+	  <MauiFont Remove="Resources\Fonts\README.txt" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Remove="Views\Sobre.xaml" />
 	  <MauiXaml Remove="Views\SobreDesenvolvedor.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Fonts\OFL.txt" />
+	  <None Remove="Resources\Fonts\README.txt" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -74,6 +95,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Views\ContratacaoHospedagem.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\FinalizadaHospedagem.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\HospedagemContratada.xaml">
