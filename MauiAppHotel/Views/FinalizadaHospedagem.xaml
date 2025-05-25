@@ -6,7 +6,7 @@
         <Label 
             Text="Reserva Realizado com Sucesso!"
             FontFamily="OpenSans-Semibold"
-            FontSize="50"
+            FontSize="40"
             HorizontalOptions="CenterAndExpand"
             TextColor="{StaticResource MidnightBlue}" />
 
