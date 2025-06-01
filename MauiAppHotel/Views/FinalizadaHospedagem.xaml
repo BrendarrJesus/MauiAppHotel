@@ -12,16 +12,21 @@
 
         <Frame Margin="10" HorizontalOptions="CenterAndExpand">
             <VerticalStackLayout>
-                <Label Text="Quarto escolhido: Suíte Super Luxo"
-                       FontSize="20"/>
-                <Label Text="Adultos: 2" 
-                       FontSize="20"/>
-                <Label Text="Crianças: 1" 
-                       FontSize="20"/>
-                <Label Text="Dias reservados: 3" 
-                       FontSize="20"/>
-                <Label Text="Valor da estádia: R$750,00"
-                       FontSize="20"/>
+                <Label Text="Quarto escolhido: " FontSize="20"/>
+                <Label Text="{Binding QuartoSelecionado.Descricao}"
+                FontSize="20"/>
+                <Label Text="Adultos: " FontSize="20"/>
+                <Label Text="{Binding QntAdultos}"
+                FontSize="20"/>
+                <Label Text="Crianças: " FontSize="20"/>
+                <Label Text="{Binding QntCriancas}"
+                FontSize="20"/>
+                <Label Text="Dias reservados: " FontSize="20" />
+                <Label Text="{Binding Estadia}"
+                FontSize="20"/>
+                <Label Text="Valor da estádia: " FontSize="20" />
+                <Label Text="{Binding ValorTotal, StringFormat='{}{0:c}'}"
+                FontSize="20"/>
             </VerticalStackLayout>
         </Frame>
 
